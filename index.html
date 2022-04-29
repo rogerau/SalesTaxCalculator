@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="sales_tax.js"></script>
+</head>
+<body onload="focusOnLoad()">
+<main>
+    <h1>Sales Tax Calculator</h1>
+<!-- Add Form/Input Components Here and modify the sale_tax.js file -->
+    <form action="" method="GET">
+        <div>
+            <p>Enter Subtotal and Tax Rate and click "Calculate".</p>
+            <div class="input1">
+                <label for="stotal">Subtotal:</label>
+                <input type="text" id="stotal" name="subTotal"/>
+            </div>
+            <div class="input2">
+                <label for="trate">Tax Rate:</label>
+                <input type="text" id="trate" name="taxRate"/>
+            </div>
+            <div class="result1">
+                <label for="stax">Sales Tax:</label>
+                <input type="text" id="stax" name="salesTax"/>
+            </div>
+            <div class="result2">
+                <label for="total">Total:</label>
+                <input type="text" id="total" name="total"/>
+            </div>
+        </div>
+        <input type="button" value="Calculate" id="calculate" name="calculate" onclick="calculate_Function()"/>
+        <input type="button" value="Clear" id="clear" name="clear" onclick="clear_Entries_Function()"/>
+    </form>
+</main>
+</body>
+</html>
